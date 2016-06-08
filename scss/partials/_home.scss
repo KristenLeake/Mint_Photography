@@ -1,4 +1,14 @@
-/* Glow */
+
+
+////Displayed Images///////
+img {
+    width: 70%;
+    height: auto;
+}
+
+
+
+////////////* Glow *////////////////
 #home {
 .hvr-glow {
     vertical-align: middle;
@@ -51,7 +61,7 @@
     }
 }
 
-/* Cover */
+////////////////* Parallax Cover *////////////////////
 @import "compass"
 
 $color-active: rgba( 0 , 0 , 0 , 0 )
@@ -202,3 +212,16 @@ p
   
 h3
   @include contain( font-size , 4vw , 10px , 15px )
+
+ // ** Parallax Effect Below **
+
+.parallax {
+  perspective-origin-x: 100%;
+}
+.parallax__layer {
+  transform-origin-x: 100%;
+}
+
+.parallax__group {
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
